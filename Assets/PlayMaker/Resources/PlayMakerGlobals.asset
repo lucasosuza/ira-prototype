@@ -26,6 +26,18 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 0
+    - useVariable: 1
+      name: Player_AttackPower
+      tooltip: Basic attack power operator
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Player_Health
+      tooltip: Basic player health
+      showInInspector: 0
+      networkSync: 0
+      value: 100
     intVariables: []
     boolVariables:
     - useVariable: 1
@@ -54,6 +66,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000
   events:
   - hitGround
+  - Hit
