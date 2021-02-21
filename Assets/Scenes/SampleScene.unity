@@ -2920,7 +2920,7 @@ MonoBehaviour:
         - 
         - 
         - Raycast ground
-        - ' Raycast player'
+        - Raycast player
         - 
         actionEnabled: 010101010101
         actionIsOpen: 000000000101
@@ -3000,11 +3000,11 @@ MonoBehaviour:
         fsmEnumParams: []
         fsmFloatParams:
         - useVariable: 1
-          name: walkSpeed
+          name: Enemy_WalkSpeed
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 5
+          value: 3.5
         - useVariable: 1
           name: 
           tooltip: 
@@ -3018,11 +3018,11 @@ MonoBehaviour:
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: walkSpeed
+          name: Enemy_WalkSpeed
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 5
+          value: 3.5
         - useVariable: 1
           name: 
           tooltip: 
@@ -3064,7 +3064,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 2
         - useVariable: 1
           name: 
           tooltip: 
@@ -3160,7 +3160,7 @@ MonoBehaviour:
           networkSync: 0
           value: {x: 0, y: 0, z: 0}
         - useVariable: 1
-          name: walkDir
+          name: Enemy_WalkDirection
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -3172,7 +3172,7 @@ MonoBehaviour:
           networkSync: 0
           value: {x: 0, y: 0, z: 0}
         - useVariable: 1
-          name: walkDir
+          name: Enemy_WalkDirection
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -3194,13 +3194,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 0, y: -1, z: 1}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
+          value: {x: 2, y: -1, z: 1}
         - useVariable: 1
           name: 
           tooltip: 
@@ -3218,7 +3212,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 0, y: 1.5, z: 1}
+          value: {x: 0, y: 0, z: 0}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 3, y: -1, z: 1}
         - useVariable: 1
           name: 
           tooltip: 
@@ -3385,11 +3385,11 @@ MonoBehaviour:
         fsmEnumParams: []
         fsmFloatParams:
         - useVariable: 1
-          name: walkSpeed
+          name: Enemy_WalkSpeed
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 5
+          value: 3.5
         - useVariable: 0
           name: 
           tooltip: 
@@ -3461,7 +3461,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 01010101
-        actionIsOpen: 00000001
+        actionIsOpen: 01000001
         actionStartIndex: 00000000070000000d00000016000000
         actionHashCodes: 5552ad05dfd72a04f804e70448c01101
         unityObjectParams: []
@@ -3496,11 +3496,11 @@ MonoBehaviour:
         fsmEnumParams: []
         fsmFloatParams:
         - useVariable: 1
-          name: walkSpeed
+          name: Enemy_WalkSpeed
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 5
+          value: 3.5
         - useVariable: 1
           name: 
           tooltip: 
@@ -3514,11 +3514,11 @@ MonoBehaviour:
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: walkSpeed
+          name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 5
+          value: 0
         - useVariable: 1
           name: 
           tooltip: 
@@ -3572,7 +3572,7 @@ MonoBehaviour:
           networkSync: 0
           value: {x: 0, y: 0, z: 0}
         - useVariable: 1
-          name: walkDir
+          name: Enemy_WalkDirection
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -3584,7 +3584,7 @@ MonoBehaviour:
           networkSync: 0
           value: {x: 0, y: 0, z: 0}
         - useVariable: 1
-          name: walkDir
+          name: Enemy_WalkDirection
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -3705,11 +3705,11 @@ MonoBehaviour:
         fsmEnumParams: []
         fsmFloatParams:
         - useVariable: 1
-          name: walkSpeed
-          tooltip: 
+          name: Player_WalkSpeed
+          tooltip: Player Walk Speed
           showInInspector: 0
           networkSync: 0
-          value: 5
+          value: 2.5
         - useVariable: 0
           name: 
           tooltip: 
@@ -3761,20 +3761,14 @@ MonoBehaviour:
       isGlobal: 0
     globalTransitions: []
     variables:
-      floatVariables:
-      - useVariable: 1
-        name: walkSpeed
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: 5
+      floatVariables: []
       intVariables: []
       boolVariables: []
       stringVariables: []
       vector2Variables: []
       vector3Variables:
       - useVariable: 1
-        name: walkDir
+        name: Enemy_WalkDirection
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -3790,7 +3784,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000
+      variableCategoryIDs: 00000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -4557,7 +4551,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 01010101
-        actionIsOpen: 01000101
+        actionIsOpen: 01010101
         actionStartIndex: 00000000050000000c00000012000000
         actionHashCodes: 11839a005552ad05dfd72a04f804e704
         unityObjectParams: []
@@ -4597,9 +4591,9 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
+        - useVariable: 1
+          name: Player_WalkSpeed
+          tooltip: Player Walk Speed
           showInInspector: 0
           networkSync: 0
           value: 2.5
@@ -4767,19 +4761,7 @@ MonoBehaviour:
         value: {x: 0, y: 0, z: 0}
       colorVariables: []
       rectVariables: []
-      quaternionVariables:
-      - useVariable: 1
-        name: 'Player_Quarterion_Rotation '
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {x: 0, y: 0, z: 0, w: 0}
-      - useVariable: 1
-        name: Player_Quarterion_Rotation_with_Lerp
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {x: 0, y: 0, z: 0, w: 0}
+      quaternionVariables: []
       gameObjectVariables: []
       objectVariables: []
       materialVariables: []
@@ -4788,7 +4770,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 000000000000000000000000
+      variableCategoryIDs: 00000000
     description: 
     docUrl: 
     showStateLabel: 0

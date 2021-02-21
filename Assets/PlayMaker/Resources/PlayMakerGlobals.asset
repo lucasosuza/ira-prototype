@@ -38,6 +38,18 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 100
+    - useVariable: 1
+      name: Player_WalkSpeed
+      tooltip: Player Walk Speed
+      showInInspector: 0
+      networkSync: 0
+      value: 2.5
+    - useVariable: 1
+      name: Enemy_WalkSpeed
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 3.5
     intVariables: []
     boolVariables:
     - useVariable: 1
@@ -66,7 +78,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - hitGround
   - Hit
